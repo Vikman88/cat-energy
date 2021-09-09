@@ -1,0 +1,29 @@
+.button-toggle {
+  position: relative;
+  background-color: #ffffff;
+  border: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    left: -3px;
+    top: 13px;
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    left: -3px;
+    top: 13px;
+    background-color: #000000;
+    transform: rotate(-45deg);
+  }
+}

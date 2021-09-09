@@ -1,0 +1,51 @@
+.page-footer {
+  background-color: @basicgrey;
+}
+
+.page-footer__contacts {
+  padding: 0 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "offer address";
+  column-gap: 10px;
+  background-color: #ffffff;
+}
+
+.page-footer__offer {
+  grid-area: offer;
+  padding: 25px 0;
+  margin: 0;
+  font-family: @oswaldr;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.page-footer__address {
+  grid-area: address;
+  padding: 25px 0;
+  margin: 0;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.page-footer__maps {
+  display: block;
+  width: 320px;
+  height: 362px;
+  background-image: url("../../img/location.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-footer__brand {
+  margin: 0 20px;
+}
